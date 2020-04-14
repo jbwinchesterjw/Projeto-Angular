@@ -1,0 +1,435 @@
+/*quando e (.) e uma classe e quando e (#) e um id*/
+/*padronizar tags*/
+*{
+    font :14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+} 
+/*fundo da pagina*/
+body{
+    
+    image-resolution: inherit ;
+    background-image: url("../imgs/fundo01.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;/*obriga as float a funcionar*/
+}
+/*enquanto tiver espaço fica do lado*/
+header h1{
+    float: left;
+    margin: 20px;
+    color: #fff;/*exadecimal*/
+    font-size: 26px;
+}
+header nav{
+    float: right;
+}
+
+header nav:a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 20px;
+    transition: color 0.3s;
+
+}/*
+header a:hover{
+    color: yellow;
+}*/
+/*anuncio*/
+.anuncio{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.anuncio h1{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;/*sobra nas letras*/
+    font-size: 30px;
+    line-height: 50px;
+}
+/*Resevar*/
+.reserva{
+    background-color:	#6FC5C3;
+    border-radius: 5px;
+    width: 580;;
+    margin-top: 8%;
+    margin-left: 5%;
+    padding: 1%;
+}
+.reserva select{
+    border:1px solid ;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+.reserva{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 700px;
+  
+}
+
+
+.reserva input[type="date"]{
+    border: 1px solid #e8e8e8;
+    border-radius :10px;
+    padding: 3px 12px;
+    margin-left:  10px;
+}
+
+.reserva input[type="button"]{
+    border: 3px solid #e8e8e8;
+    border-radius :10px;
+    padding: 3px 12px;
+    margin-left:  10px;
+}
+.reserva p{
+    float: left;
+    font-size: 30px;
+    color:#222121;
+}
+/*conteudo principal - main*/
+main{
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 420px;
+}
+/*ofertas*/
+.ofertas h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.ofertas li{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: box-shadow 0.5s, transform 0.5s;
+    border-radius: 10px;
+}
+.ofertas li:nth-child(2) {
+    margin: 0px 150px;
+}
+.ofertas li:hover{
+    box-shadow: 0px 0px 10px #999;
+    /*transform: translate(0px, -20px);*/
+}/*pesquisar w3school*/
+.ofertas img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ofertas a{
+    text-decoration: none;
+    width: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.ofertas p{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(53, 176, 0);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -3px;
+}
+/*Depoimentos*/
+.depoimentos h1{
+text-align: center;
+font-size: 30px;
+padding: 40px;
+}
+.depoimentos img{
+    width: 100%;
+    border-radius: 80px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.depoimentos li{
+    width: 260px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    text-align: center;
+    color: #8b8b8b;
+}
+.depoimentos li:nth-child(2){
+    margin: 0px 40px;
+}
+.depoimentos p:nth-child(1){
+    text-align: justify;
+    line-height: 19px;
+    text-indent: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+/*Roda pé*/
+footer{
+    margin-top: 80px;
+    background-image: url("../imgs/rodape.jpg");
+    background-size: contain;
+}
+
+footer ul{
+    color :#fff;
+    display:inline-block;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+footer li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+footer li:first-child{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 16px; 
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.contato{
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.contato iframe{
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 470px;
+    height: 329px;
+}
+
+.contato form{
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 470px;
+}
+.contato input[type="text"],
+.contato textarea{
+    width: 436px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.contato textarea{
+    height: 100px;
+    resize: none;
+}
+.contato input[type="submit"]{
+    padding: 5px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.informacao h1{
+    color: white;
+    
+}
+
+/*parte do  slider*/
+
+
+.containerSlider{
+    border-radius: 15px;
+    right: 500;
+}
+body {
+	font-family: Arial, verdana, georgia;
+	font-size: 14px;
+	color: black;
+    /*background-repeat: no-repeat;*/
+
+}
+
+div {
+	display: table;
+	width: 100%;
+}
+
+p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a:link {
+	color:#0059B2;
+	text-decoration: none;
+}
+
+/* estrutura do layout */
+.container {
+	display: block;
+	width: 100%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container .row {
+	display: table;
+	width: 100%;
+}
+
+.coluna_logomarca {
+	width: 270px;
+	float: left;
+	margin-top: 15px;
+}
+
+.coluna_menu {
+	width: 647px;
+	float: right;
+}
+
+.coluna_areaNoticias {
+	float:left;
+	width: 456px;
+}
+
+.coluna_areaProdutos {
+	float: right;
+	width: 456px;
+}
+
+.coluna_produto01 {
+	float: left;
+	width: 220px;
+}
+
+.coluna_produto02 {
+	float: right;
+	width: 220px;
+}
+#passagenHotel{
+    display:inline-block;
+}
+#promocoespacotes{
+    display:inline-block;
+}
+/* defini��es de menu */
+.container_menu {
+	box-shadow: 5px 5px 5px rgb(20, 20, 20);
+	-webkit-box-shadow: 5px 5px 5px black;
+	-moz-box-shadow: 5px 5px 5px black;
+	-o-box-shadow: 5px 5px 5px black;
+	margin-top: 2px;
+}
+/*estilizacao da barra de menu*/
+.container_menu a {
+	text-decoration: none;
+	display: block;
+	float: left;
+	padding: 16px 20px;
+	color: white;
+	transition: background 0.6s ease-out, color 0.6s ease-out;
+	-webkit-transition: background 0.6s ease-out, color 0.6s ease-out;
+	-moz-transition: background 0.6s ease-out, color 0.6s ease-out;
+	-o-transition: background 0.6s ease-out, color 0.6s ease-out;
+}
+
+.container_menu a:hover {
+	color:black;
+    background:rgb(42, 248, 121);
+    border-radius: 15px;
+}
+
+.container_menu a:first-child {
+	margin-left: 6px;
+}
+/*esse faz com que os incones do roda pe fiquem lado a lado*/
+.iconeInicial {
+	width: 221px;
+	float: left;
+	margin: 8px;
+}
+
+.iconeInicial:first-child {
+	margin-left: 0px;
+}
+
+
+/* definicoes do slider */
+#containerSlider {
+	width: 925px;
+	height: 295px;/*serve para preencher o slider por completo*/
+	overflow: hidden;
+	border-radius: 8px;
+	border-radius: -8px;
+	box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-webkit-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-moz-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	-o-box-shadow: 1px 1px 8px black, -1px -1px 8px black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*  classes de uso geral */
+
+.titulo {
+	font-size:23px;
+	padding-bottom: 10px;
+	border-bottom:1px dashed #BCBCBC;
+}
+
+
+/*para os botoes de navegaçao*/
+.bordaArredondada {
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+}
+
+
+.ei {
+	margin-bottom:22px;
+}
+
+
+#timer,
+#captions {
+	width: 925px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#captions .carousel > div {
+	color: rgb(118, 246, 106);
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 52px;
+	text-transform: uppercase;
+	text-indent: 50px;
+	width: 925px;
+	height: 50px;
+	float: left;
+}
+.carousel >h1{
+    color: white;
+}
+
+
